@@ -10,21 +10,21 @@ var fondoMarino;
 var score=0;
 
 function preload(){
-
+  pezRuninng = loadAnimation("imagen/pez1.png","imagen/pez2.png","imagen/pez3.png");
+  pezGameOver = loadImage("imagen/pezGameOver.png");
+  backgroundImg = loadImage("imagen/fondoMarino.png");
+  pirañaRuning = loadAnimation("imagen/piraña2.png","imagen/piraña3.png");
+  coralImage = loadImage("imagen/coral.png");
+  algaImage = loadImage("imagen/alga.png")
+  gameOverImg = loadImage("imagen/gameOver.png");
+  restartImg = loadImage("imagen/restart.png");
 
 }
 
 function setup(){
     createCanvas(windowWidth, windowHeight);
 
-    pezRuninng = loadAnimation("imagen/pez1.png","imagen/pez2.png","imagen/pez3.png");
-    pezGameOver = loadImage("imagen/pezGameOver.png");
-    backgroundImg = loadImage("imagen/fondoMarino.png");
-    pirañaRuning = loadAnimation("imagen/piraña2.png","imagen/piraña3.png");
-    coralImage = loadImage("imagen/coral.png");
-    algaImage = loadImage("imagen/alga.png")
-    gameOverImg = loadImage("imagen/gameOver.png");
-    restartImg = loadImage("imagen/restart.png");
+    
 
     pez=createSprite(50,300,20,30);
     //pez.addAnimation("Runing",pezRuninng);
